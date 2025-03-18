@@ -8,80 +8,95 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- css  -->
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
      
 </head>
 <body>
     <!-- cabeçalho -->
      <header> 
-        <a href="#" class="logo">LaryssaDEV</a>
+        <a href="#" class="logo">Laryssa<span>DEV</span></a>
 
         <!-- navbar -->
         <div class="nav">
             <a href="#home">Home</a>
-            <a href="#service">service</a>
-            <a href="#portfolio">portfolio</a>
-            <a href="#contact">contact</a>
-            <a href="#about">about</a>
+            <a href="#service">Service</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
         </div>
+        
+        <div class="nav-responsive">
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div class="menu-hamburguer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
      </header>
 
      <!-- home section -->
       <section class="home" id="home">
-      <div class="home-contact">
-        <h1>Laryssa Finizola</h1>
-        <h2>Desenvolvedora Full Stack</h2>
-        <p> <span>Hello World!</span>Me chamo Laryssa e sou desenvolvedora <span> Full-Stack </span>, graduanda em Ciência da Computação.
-          Explore minhas habilidades e entre em contato para projetos desafiadores!
+      <div class="home-content">
+        <h1>LARYSSA FINIZOLA</h1>
+        <h2><span>Desenvolvedora Full-Stack</span> </h2> 
+        <p>
+            Código limpo, interfaces intuitivas e soluções escaláveis ​​para seu projeto digital!
         </p>
 
         <div class="social-media">
             <!-- linkedin -->
             <a href="#"><i class='bx bxl-linkedin'></i></a>
             <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-
-            <div>
-                <a href="#" class="btn">Download CV</a>
-            </div>
+            <a href="#"><i class='bx bxl-github' ></i></a>
+        </div>
+        
+        <div>
+            <a href="public/curriculo.pdf" download="curriculo.pdf" class="btn">Download CV</a>
+        </div>
       </div>
-
-      <div class="home-img">
-        <img src="img/file.png" alt="Profile Picture">
-      </div>
-      </div>
+       <!--<div class="home-img">
+            <img src="img/icon-portfolio.png" alt="Profile Picture">
+        </div> -->
     </section>
 
     <!-- service section -->
-     <section class="service" id="service">
-        <h2>Serviços</h2>
+    <section class="service" id="service">
+        <h1>O que eu posso te <span>oferecer</span>?</h1>
         <div class="service-container">
-            <div class="services-box">
+            <div class="service-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Desenvolvimento Web</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-
                 <a href="#" class="btn">Saiba mais</a>
             </div>
-
-            <div class="service-container">
-                <div class="services-box">
-                    <i class='bx bx-code-curly' ></i>
-                    <h3>Desenvolvimento Back-end</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
     
-                    <a href="#" class="btn">Saiba mais</a>
-                </div>
-
+            <div class="service-box">
+                <i class='bx bx-code-curly'></i>
+                <h3>Desenvolvimento Back-end</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
         </div>
-     </section>
+    </section>
+    
 
     <!-- portfolio section -->
      <section class="portfolio" id="portfolio">
-        <h2><span>Projetos</span> Recentes</h2>
+        <h1><span>Projetos</span> Recentes</h1>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
@@ -97,7 +112,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="img/escritorio2.jpg" alt="portfolio2">
+                <img src="img/escritorio3.jpg.png" alt="portfolio2">
                 <div class="portfolio-layer">
                     <h4>Desenvolvimento Web</h4>
                     <p> 
@@ -109,7 +124,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="img/escritorio3.jpg" alt="portfolio3">
+                <img src="img/escritorio2.jpg.png" alt="portfolio3">
                 <div class="portfolio-layer">
                     <h4>Desenvolvimento Web</h4>
                     <p> 
@@ -124,7 +139,7 @@
 
     <!-- contact section -->
      <section class="contact" id="contact">
-        <h2>Entre em <span>Contato!</span></h2>
+        <h1>Entre em <span>Contato!</span></h1>
 
         <form action="">
             <div class="input-box">
@@ -141,20 +156,21 @@
      </section>
 
     <!-- about section -->
-     <section class="sobre-mim" class="sobre-mim">
-        <div class="abou-img">
+     <section class="about" id="about">
+        <div class="about-img">
             <img src="img/icon0.png" alt="Sobre mim">
         </div>
 
         <div class="about-content">
-            <h3>Sobre mim</h3>
-            <h1><span>Desenvolvedora</span>Full-Stack </h1>
+            <h1>Sobre mim</h1>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, beatae?
+                Atualmente curso Ciência da Computação pela UEPB - Universidade Estadual da Paraíba, na qual
+                também participo do projeto Mulheres na Computação (MNC).
             </p>
 
             <a href="#" class="btn">Saiba Mais</a>
         </div>
+
      </section>
 
      <!-- rodapé -->
